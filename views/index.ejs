@@ -25,6 +25,12 @@
 
             </div>  
 
+            
+
+          
+
+            
+
             <!-- JUMBOTRON -->
             <div class="row">
 
@@ -35,18 +41,25 @@
 
             </div>
 
+          </div>
+
+
             <div class="row">
+
+                
                 <% 
                 for(var i=0;i<dataBike.length;i++){
                 %>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="card">
-                            <img src=<%= dataBike[i].url%> class="card-img-top">
+                            <img src="<%= dataBike[i].url%>" class="card-img-top">
                             <div class="card-body text-center">
                                 <h5 class="card-title"><%= dataBike[i].name%></h5>
                                 <%= dataBike[i].price%>€
                                 <a href="/shop?bikeNameFromFront=<%= dataBike[i].name%>&bikePriceFromFront=<%= dataBike[i].price%>&bikeImageFromFront=<%= dataBike[i].url%>" class="btn btn-outline-info btn-sm">Buy</a>
-                            </div>
+                                <%if (dataBike[i].mea){%> <span class="badge badge-danger py-2"> Meilleurs prix !</span> <%}%>
+                                </div>
+                                
                         </div>
                     </div>
 
