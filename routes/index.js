@@ -19,7 +19,6 @@ var dataBike = [
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  console.log(dataBike)
 
   if(req.session.dataCardBike == undefined){
     req.session.dataCardBike = []
@@ -114,12 +113,12 @@ router.post('/create-checkout-session', async (req, res) => {
   res.redirect(303, session.url);
  });
  
- router.get('/success', (req, res) => { //ou '/cancel'
-  res.render('success'); //ou 'cancel'
+ router.get('/success', (req, res) => { 
+  res.render('success'); 
  });
 
- router.get('/cancel', (req, res) => { //ou '/cancel'
-  res.render('cancel'); //ou 'cancel'
+ router.get('/cancel', (req, res) => { 
+  res.render('cancel');
  });
 
 module.exports = router;
