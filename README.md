@@ -1,4 +1,4 @@
-<h1 align="center">BikeShop</h1> 
+<h1 align="center">BikeShop 🚲</h1> 
 
 <h5 align="center">E-commerce</h5>
 
