@@ -1,8 +1,4 @@
-<h1 align="center">BikeShop 🚲</h1> 
-
-<h5 align="center">E-commerce</h5>
-
-
+<h1 align="center">BikeShop🚲</h1> 
 
 <h3 align="center">Objectifs</h3>
 <p align="center">
