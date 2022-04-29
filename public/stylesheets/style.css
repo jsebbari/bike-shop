@@ -1,8 +1,14 @@
 /* ------ Body ---- */
-
+*{
+    margin:0 !important;
+    padding:0 !important;
+    
+    
+}
 body{
     background-color: #ffffff;
     font-family: 'Darker Grotesque', sans-serif;
+  
 } 
 
 /* ---------- Home page -------------- */
