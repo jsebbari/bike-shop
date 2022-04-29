@@ -80,7 +80,7 @@
                                     <td><%=dataCardBike[i].shippingFees*dataCardBike[i].quantity %>€</td>
                                     <td><%= dataCardBike[i].price %>€</td>
                                     <td><%= (dataCardBike[i].price * dataCardBike[i].quantity )+(dataCardBike[i].shippingFees*dataCardBike[i].quantity)%>€</td>
-                                    <td><a href="/delete-shop?position=<%=i%>"><button class="btn btn-outline-info btn-sm" name="button"><i class="far fa-trash-alt"></i></button></a></td>
+                                    <td class="pl-2 "><a href="/delete-shop?position=<%=i%>"><button class="btn btn-outline-info btn-sm" name="button"><i class="far fa-trash-alt"></i></button></a></td>
                                 </tr>
                             <%
                                 totalCmd += (dataCardBike[i].price * dataCardBike[i].quantity)+(dataCardBike[i].shippingFees*dataCardBike[i].quantity)
@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-12 text-right">
                         <form action="/create-checkout-session" method="POST">
-                                <button type="submit" class="btn btn-outline-info btn-sm btn-checkout">Checkout</button>
+                                <button type="submit" class="btn btn-outline-info btn-sm btn-checkout mx-3">Checkout</button>
                         </form>
                     </div>
                 </div>
