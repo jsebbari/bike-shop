@@ -1,6 +1,6 @@
 <h1 align="center">BikeShop</h1> 
 
-<h3 align="center">E-commerce</h3>
+<h5 align="center">E-commerce</h5>
 
 
 
